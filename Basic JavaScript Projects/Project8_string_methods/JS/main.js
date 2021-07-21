@@ -23,7 +23,7 @@ function uppercaseFunction() {
     document.getElementById("result_1").innerHTML = result;
 }
 
-// The search() method searches a string for a specified value, and returns the positon of the mathch. 
+// The search() method searches a string for a specified value, and returns the positon of the match. 
 function searchFunction() {
     var str = document.getElementById("str_1").innerHTML;
     var result = str.search(document.getElementById("word").value);
