@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>JavaScript Array.some()</h2>
+    <p>The some() method checks if some array values pass a test.</p>
+    <p>Click the button to check the array for values >= 18.</p>
+    <p>Array: [2, 10, 18, 20, 13, 15, 30]</p>
+    <button onclick="myFunction()">Button</button>
+    <p id="displayAge"></p>
+    <script>
+        const ages = [2, 10, 18, 20, 13, 15, 30];
+        // Using the arrow function to pass in a parameter of age.
+        checkAge = (age) => age >= 18;
+        function myFunction() {
+        // Use the .some() to iterate through the array of ages and display the result.
+        document.getElementById("displayAge").innerHTML = "The condition that there are values " +
+        " in the array that are >= 18 is " + ages.some(checkAge) + ".";
+        }
+    </script>
+</body>
+</html>

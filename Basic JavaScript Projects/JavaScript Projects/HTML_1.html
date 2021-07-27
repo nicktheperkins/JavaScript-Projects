@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="JavaScript/JavaScript_1.js" defer></script>
+    </head>
+    <body>
+        <!-- Switch Statement -->
+        <h1>What is you favorite ice cream flavor?</h1>
+        <h3>Pick your favorite ice cream flavor from this list:</h3>
+        <ul>
+            <li>Vanilla</li>
+            <li>Chocolate</li>
+            <li>Strawberry</li> 
+        </ul>
+        <h3>Enter your choice below:</h3>
+
+        <input id="input_1" type="text" value="">
+        <button onclick="Ice_Cream()">Submit</button>
+        <p id="output"></p>
+        <!-- End Switch Statement -->
+
+        <!-- document.getElementByClassName() Method -->
+        <h1 class="Click">This text will change!</h1>
+        <h3 class="Click">This text will not change.</h3>
+        <button onclick="Hello_World_Function()">Click me!</button>
+        <!-- End document.getElementByClassName() Method -->
+
+        <!-- <canvas> element -->
+        <!-- The <canvas> element is the container for graphics. JS is used for drawing the graphics.
+            The canvas is a rectangular section on a webpage.
+            The are several methods that cana be used with the <canvas> element to draw
+            boxes, circles, stylized text, and add images. -->
+        <canvas id="ID_Name" width="500" height="250"></canvas>
+        <!-- Borders can be added to canvases utilizing the style attribute. -->
+        <canvas id="ID_Name" width="500" height="250" style="border:5px solid black;"></canvas>
+
+        <canvas id="circle" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+
+        <img id="escher" src="mcescher.jpg" alt="Life and Work" width="220" height="277">
+        <canvas id="myCanvas" width="250" height="300" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        <button onclick="myCanvas()">Try it</button>
+
+        <canvas id="Canvas_2" width="300" height="150" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        <button onclick="Canvas_2()">Click here!</button>
+        <!-- End <canvas> element -->
+    </body>
+</html>

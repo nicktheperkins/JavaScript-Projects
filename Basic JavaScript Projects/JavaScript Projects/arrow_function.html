@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="displayCar"></p>
+        <script>
+        // The arrow function allows me to take out the keyword "function".
+        // It also lets me use only the parentheses, removing the need for curly braces.
+            myFunction = function() {
+                return "This is a function"
+            }
+        
+            myFunction = () => "This is a function";
+        // Another example would be passing in a parameter.
+            var car;
+            car = (val) => "These are my favorite car brands: " + val;
+            document.getElementById('displayCar').innerHTML = car("Toyota, Hyundai, and Honda");
+        // In this example, the arrow function takes the values as val from the car variable in innerHTML.
+        </script>
+    </body>
+</html>
