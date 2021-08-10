@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+</body>
+<script>
+$(document).ready(function() {
+    // This code appends the following html after the html tag
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>"
+    );
+    $("#1").on("click", function() {
+        console.log("You clicked a paragraph!");
+    });
+    $("#2").css({"color":"red"})
+    //This function toggles the h1 tag from hide to show in 1 second
+    $("#2").click(function(){
+        $('h1').toggle(1000);
+    });
+    $("#3").click(function() {
+        // .hide(3000) will hide the h1 element in 3 seconds
+        $('h1').hide(3000);
+    });
+});
+</script>
+</html>
