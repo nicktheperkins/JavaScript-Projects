@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        @keyframes zoominoutsinglefeatured {
+            0% {transform: scale(1,1);}
+            50% {transform: scale(1.2,1.2);}
+            100% {transform: scale(1,1);}
+        }
+        .myImage img {
+            animation: zoominoutsinglefeatured 15s forwards;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Zoom In and Out Challenge</h2>
+    <div class="myImage">
+        <img src="img_1.jpg" alt="Lense" class="center">
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+html {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input {
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+/* The page-container goes around everything on the page, and sets its minimun height to 100% of the  viewport(vh).
+    As it is relative, its child elements can be set with absolute position based on it late. */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* The content-wrap has a bottom padding that is the height of the footer, 
+    ensuring that exactly enough space is left for the footer inside the container they are both in. 
+    A wrapping div is used here that would contain all other page content. */
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+/* The footer is set to absolute, sticking to the bottom: 0 of the page-container it is within. 
+    This is important, as it is not absolute to the viewport, but will move down if the page-container 
+    is taller than the viewport. As stated, its height, arbitrarily set to 2.5rem here, is used in the 
+    content-wrap above it. */
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid black;
+    padding: 10px;
+}
