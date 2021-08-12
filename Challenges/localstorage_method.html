@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p id="myDog"></p>
+    <script>
+        // Set the data as a key/value pair to be saved locally in your browser
+        localStorage.setItem("Name", "Doug");
+        // Then use ethe key "Name" to reutrn its value "Doug"
+        document.getElementById("myDog").innerHTML = localStorage.getItem("Name");
+    </script>
+</body>
+</html>

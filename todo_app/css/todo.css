@@ -27,6 +27,10 @@ li {
     margin: 0;
 }
 
+.remove {
+    padding-bottom: 5px;
+}
+
 /* The page-container goes around everything on the page, and sets its minimun height to 100% of the  viewport(vh).
     As it is relative, its child elements can be set with absolute position based on it late. */
 #page-container {
